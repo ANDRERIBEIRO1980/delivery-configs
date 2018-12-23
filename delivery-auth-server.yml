@@ -25,16 +25,15 @@ security:
 
 spring:
     datasource:
-        data: classpath:/sql/data.sql
-        driver-class-name: com.mysql.jdbc.Driver
-        password: '1234'
-        platform: mysql
-        schema: classpath:/sql/schema.sql
-        url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
-        username: root
+        url: jdbc:oracle:thin:@//localhost:1521/xe        
+        username: micro
+        password: micro
+        data: classpath:/sql/data.sql        
+        schema: classpath:/sql/schema.sql        
     jpa:
-        database-platform: org.hibernate.dialect.MySQLDialect
+        database=ORACLE
+        show-sql: true
         generate-ddl: false
         hibernate:
             ddl-auto: none
-        show-sql: true
+        
