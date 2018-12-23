@@ -28,8 +28,6 @@ spring:
         url: jdbc:oracle:thin:@//localhost:1521/xe        
         username: micro
         password: micro
-        data: classpath:/sql/data.sql        
-        schema: classpath:/sql/schema.sql        
     jpa:
         database=ORACLE
         show-sql: true
