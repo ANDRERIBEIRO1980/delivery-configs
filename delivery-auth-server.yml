@@ -29,7 +29,7 @@ spring:
         username: micro
         password: micro
     jpa:
-        database=ORACLE
+        database: ORACLE
         show-sql: true
         generate-ddl: false
         hibernate:
